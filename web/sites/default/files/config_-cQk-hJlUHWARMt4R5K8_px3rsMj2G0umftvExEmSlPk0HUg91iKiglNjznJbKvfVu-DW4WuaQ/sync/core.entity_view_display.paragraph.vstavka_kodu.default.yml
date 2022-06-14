@@ -1,0 +1,31 @@
+uuid: 25132ca7-0e9c-4a1b-8003-48c67fdfc0e0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vstavka_kodu.field_body
+    - field.field.paragraph.vstavka_kodu.field_title
+    - paragraphs.paragraphs_type.vstavka_kodu
+  module:
+    - text
+id: paragraph.vstavka_kodu.default
+targetEntityType: paragraph
+bundle: vstavka_kodu
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

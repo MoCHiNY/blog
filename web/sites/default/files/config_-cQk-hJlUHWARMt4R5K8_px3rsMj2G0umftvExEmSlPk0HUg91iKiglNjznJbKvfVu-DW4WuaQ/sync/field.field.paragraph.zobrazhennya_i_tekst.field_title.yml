@@ -1,0 +1,19 @@
+uuid: 9c8d5c05-dd9c-4f2f-a44b-f7a19fa4d534
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.zobrazhennya_i_tekst
+id: paragraph.zobrazhennya_i_tekst.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: zobrazhennya_i_tekst
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

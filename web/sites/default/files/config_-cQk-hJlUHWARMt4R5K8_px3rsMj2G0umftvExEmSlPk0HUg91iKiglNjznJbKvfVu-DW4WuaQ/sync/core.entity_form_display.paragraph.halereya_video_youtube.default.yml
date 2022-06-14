@@ -1,0 +1,33 @@
+uuid: e5a759df-032c-4a48-ab68-e3447cacbaa5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.halereya_video_youtube.field_title
+    - field.field.paragraph.halereya_video_youtube.field_youtubes
+    - paragraphs.paragraphs_type.halereya_video_youtube
+  module:
+    - youtube
+id: paragraph.halereya_video_youtube.default
+targetEntityType: paragraph
+bundle: halereya_video_youtube
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youtubes:
+    type: youtube
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

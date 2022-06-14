@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8161bd9678fa59553b6f15d245d5ce8d78338ea5',
+        'reference' => '408cec142fd6a867a01600e0abe91b04d8037291',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -44,6 +44,15 @@
             'install_path' => __DIR__ . '/./semver',
             'aliases' => array(),
             'reference' => '83e511e247de329283478496f7a1e114c9517506',
+            'dev_requirement' => false,
+        ),
+        'cweagans/composer-patches' => array(
+            'pretty_version' => '1.7.2',
+            'version' => '1.7.2.0',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../cweagans/composer-patches',
+            'aliases' => array(),
+            'reference' => 'e9969cfc0796e6dea9b4e52f77f18e1065212871',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -667,6 +676,17 @@
             'reference' => '8.x-4.3',
             'dev_requirement' => false,
         ),
+        'drupal/markdown' => array(
+            'pretty_version' => 'dev-3.0.x',
+            'version' => 'dev-3.0.x',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/markdown',
+            'aliases' => array(
+                0 => '3.0.x-dev',
+            ),
+            'reference' => 'b63aa95c3ac7b95116515d2de391693542b30c81',
+            'dev_requirement' => false,
+        ),
         'drupal/media' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -811,7 +831,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8161bd9678fa59553b6f15d245d5ce8d78338ea5',
+            'reference' => '408cec142fd6a867a01600e0abe91b04d8037291',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
@@ -1057,6 +1077,24 @@
             'reference' => 'ee0db30118f661fb166bcffbf5d82032df484697',
             'dev_requirement' => false,
         ),
+        'erusev/parsedown' => array(
+            'pretty_version' => '1.7.4',
+            'version' => '1.7.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../erusev/parsedown',
+            'aliases' => array(),
+            'reference' => 'cb17b6477dfff935958ba01325f2e8a2bfa6dab3',
+            'dev_requirement' => false,
+        ),
+        'erusev/parsedown-extra' => array(
+            'pretty_version' => '0.8.1',
+            'version' => '0.8.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../erusev/parsedown-extra',
+            'aliases' => array(),
+            'reference' => '91ac3ff98f0cea243bdccc688df43810f044dcef',
+            'dev_requirement' => false,
+        ),
         'fileeye/mimemap' => array(
             'pretty_version' => '1.2.2',
             'version' => '1.2.2.0',
@@ -1138,6 +1176,15 @@
             'reference' => 'db581851a092246ad99e12d4fddf105184924c71',
             'dev_requirement' => false,
         ),
+        'league/commonmark' => array(
+            'pretty_version' => '1.6.7',
+            'version' => '1.6.7.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/commonmark',
+            'aliases' => array(),
+            'reference' => '2b8185c13bc9578367a5bf901881d1c1b5bbd09b',
+            'dev_requirement' => false,
+        ),
         'lsolesen/pel' => array(
             'pretty_version' => '0.9.12',
             'version' => '0.9.12.0',
@@ -1154,6 +1201,15 @@
             'install_path' => __DIR__ . '/../masterminds/html5',
             'aliases' => array(),
             'reference' => 'f640ac1bdddff06ea333a920c95bbad8872429ab',
+            'dev_requirement' => false,
+        ),
+        'michelf/php-markdown' => array(
+            'pretty_version' => '1.9.1',
+            'version' => '1.9.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../michelf/php-markdown',
+            'aliases' => array(),
+            'reference' => '5024d623c1a057dcd2d076d25b7d270a1d0d55f3',
             'dev_requirement' => false,
         ),
         'oomphinc/composer-installers-extender' => array(

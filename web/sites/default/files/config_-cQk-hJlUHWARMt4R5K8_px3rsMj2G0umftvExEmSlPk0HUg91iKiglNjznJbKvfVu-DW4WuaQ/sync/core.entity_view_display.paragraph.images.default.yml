@@ -1,0 +1,33 @@
+uuid: 81779d5f-fdb0-4e06-96e3-730a07cb19a0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_images
+    - field.field.paragraph.images.field_title
+    - paragraphs.paragraphs_type.images
+  module:
+    - image
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

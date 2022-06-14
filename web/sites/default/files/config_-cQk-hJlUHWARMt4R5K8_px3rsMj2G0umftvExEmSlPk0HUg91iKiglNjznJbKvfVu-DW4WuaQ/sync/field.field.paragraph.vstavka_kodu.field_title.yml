@@ -1,0 +1,19 @@
+uuid: bc2ef312-c810-416f-978d-6a7b13026c33
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.vstavka_kodu
+id: paragraph.vstavka_kodu.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: vstavka_kodu
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: ed1b0792-fdf4-4ea5-860e-25421abd1800
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.vstavka_kodu
+  module:
+    - text
+id: paragraph.vstavka_kodu.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: vstavka_kodu
+label: Вміст
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

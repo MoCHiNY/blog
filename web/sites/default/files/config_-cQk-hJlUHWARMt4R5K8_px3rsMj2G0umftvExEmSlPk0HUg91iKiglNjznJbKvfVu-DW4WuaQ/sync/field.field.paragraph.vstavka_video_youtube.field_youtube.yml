@@ -1,0 +1,21 @@
+uuid: f1fd8479-8701-4f0e-99d1-52accdfdc063
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_youtube
+    - paragraphs.paragraphs_type.vstavka_video_youtube
+  module:
+    - youtube
+id: paragraph.vstavka_video_youtube.field_youtube
+field_name: field_youtube
+entity_type: paragraph
+bundle: vstavka_video_youtube
+label: 'Вставка відео YouTube'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

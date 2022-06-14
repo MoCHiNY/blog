@@ -1,0 +1,19 @@
+uuid: 6a8055a1-d9f4-471d-b2b5-79db76ca54d3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.images
+id: paragraph.images.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: images
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

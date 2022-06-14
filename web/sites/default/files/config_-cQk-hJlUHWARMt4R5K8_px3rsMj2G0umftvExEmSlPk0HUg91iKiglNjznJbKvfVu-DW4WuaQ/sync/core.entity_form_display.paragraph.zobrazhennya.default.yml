@@ -1,0 +1,35 @@
+uuid: 1b7ee397-5782-4911-8222-a0c909ae87d1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.zobrazhennya.field_image
+    - field.field.paragraph.zobrazhennya.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.zobrazhennya
+  module:
+    - image
+id: paragraph.zobrazhennya.default
+targetEntityType: paragraph
+bundle: zobrazhennya
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -47,6 +47,10 @@ class ComposerStaticInit0b6d682b875fd0c1fb5ddb85b048f41c
         array (
             'lsolesen\\pel\\' => 13,
         ),
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -99,10 +103,12 @@ class ComposerStaticInit0b6d682b875fd0c1fb5ddb85b048f41c
         ),
         'M' => 
         array (
+            'Michelf\\' => 8,
             'Masterminds\\' => 12,
         ),
         'L' => 
         array (
+            'League\\CommonMark\\' => 18,
             'Laminas\\Stdlib\\' => 15,
             'Laminas\\Feed\\' => 13,
             'Laminas\\Escaper\\' => 16,
@@ -154,6 +160,10 @@ class ComposerStaticInit0b6d682b875fd0c1fb5ddb85b048f41c
         'lsolesen\\pel\\' => 
         array (
             0 => __DIR__ . '/..' . '/lsolesen/pel/src',
+        ),
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
         ),
         'Twig\\' => 
         array (
@@ -308,9 +318,17 @@ class ComposerStaticInit0b6d682b875fd0c1fb5ddb85b048f41c
         array (
             0 => __DIR__ . '/..' . '/oomphinc/composer-installers-extender/src',
         ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
+        'League\\CommonMark\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
         'Laminas\\Stdlib\\' => 
         array (
@@ -420,6 +438,17 @@ class ComposerStaticInit0b6d682b875fd0c1fb5ddb85b048f41c
             'Stack' => 
             array (
                 0 => __DIR__ . '/..' . '/stack/builder/src',
+            ),
+        ),
+        'P' => 
+        array (
+            'ParsedownExtra' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown-extra',
+            ),
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
         'C' => 
