@@ -1,0 +1,69 @@
+uuid: 393fbb34-0b67-44d8-b045-c62a85bfad91
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.stattya_v_bloh.field_body
+    - field.field.node.stattya_v_bloh.field_paragraph
+    - field.field.node.stattya_v_bloh.field_promo_images
+    - field.field.node.stattya_v_bloh.field_prykriplenni_attachments
+    - field.field.node.stattya_v_bloh.field_tags
+    - node.type.stattya_v_bloh
+  module:
+    - entity_reference_revisions
+    - file
+    - image
+    - user
+id: node.stattya_v_bloh.default
+targetEntityType: node
+bundle: stattya_v_bloh
+mode: default
+content:
+  field_body:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_promo_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_prykriplenni_attachments:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,38 @@
+uuid: e071fc25-ec22-4ce3-abca-546536d5470e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promo_images
+    - node.type.stattya_v_bloh
+  module:
+    - image
+id: node.stattya_v_bloh.field_promo_images
+field_name: field_promo_images
+entity_type: node
+bundle: stattya_v_bloh
+label: Промо-картинка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'fields/node.stattya_v_bloh.field_promo_images/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

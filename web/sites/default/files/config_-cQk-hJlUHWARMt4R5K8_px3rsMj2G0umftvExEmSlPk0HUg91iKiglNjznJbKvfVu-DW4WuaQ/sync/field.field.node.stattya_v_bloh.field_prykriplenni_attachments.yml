@@ -1,0 +1,27 @@
+uuid: f5028026-4a43-4a97-a719-639198a05575
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prykriplenni_attachments
+    - node.type.stattya_v_bloh
+  module:
+    - file
+id: node.stattya_v_bloh.field_prykriplenni_attachments
+field_name: field_prykriplenni_attachments
+entity_type: node
+bundle: stattya_v_bloh
+label: 'Прикріпленні файли'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'fields/node.stattya_v_bloh.field_prykriplenni_attachments/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt jpg doc png php'
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,31 @@
+uuid: 66aacab7-c8dc-4a0e-bb21-29628afc9b73
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.stattya_v_bloh.field_body
+    - field.field.node.stattya_v_bloh.field_paragraph
+    - field.field.node.stattya_v_bloh.field_promo_images
+    - field.field.node.stattya_v_bloh.field_prykriplenni_attachments
+    - field.field.node.stattya_v_bloh.field_tags
+    - node.type.stattya_v_bloh
+  module:
+    - user
+id: node.stattya_v_bloh.teaser
+targetEntityType: node
+bundle: stattya_v_bloh
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_paragraph: true
+  field_promo_images: true
+  field_prykriplenni_attachments: true
+  field_tags: true
+  langcode: true

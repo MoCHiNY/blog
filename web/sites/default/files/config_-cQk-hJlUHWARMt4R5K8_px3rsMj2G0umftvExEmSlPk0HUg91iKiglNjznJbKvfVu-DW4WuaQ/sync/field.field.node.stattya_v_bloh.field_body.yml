@@ -1,0 +1,19 @@
+uuid: 47bd309a-eaa1-416a-b37c-9a4c2642294b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.stattya_v_bloh
+id: node.stattya_v_bloh.field_body
+field_name: field_body
+entity_type: node
+bundle: stattya_v_bloh
+label: Анонс
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,47 @@
+uuid: 3e31f9cd-dd16-4552-a7f4-d6f4dfa997af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: page
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      halereya_video_youtube:
+        weight: -9
+        enabled: false
+      images:
+        weight: -12
+        enabled: false
+      text:
+        weight: -15
+        enabled: false
+      vstavka_kodu:
+        weight: -11
+        enabled: false
+      vstavka_video_youtube:
+        weight: -10
+        enabled: false
+      zobrazhennya:
+        weight: -13
+        enabled: false
+      zobrazhennya_i_tekst:
+        weight: -14
+        enabled: false
+field_type: entity_reference_revisions

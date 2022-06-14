@@ -1,0 +1,18 @@
+uuid: ce90b4fc-75f2-47ce-87bc-9eb5cdb375e3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.stattya_v_bloh
+id: node.stattya_v_bloh.title
+field_name: title
+entity_type: node
+bundle: stattya_v_bloh
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
