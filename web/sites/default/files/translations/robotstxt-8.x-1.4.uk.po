@@ -1,0 +1,27 @@
+# Ukrainian translation of RobotsTxt (8.x-1.4)
+# Copyright (c) 2020 by the Ukrainian translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RobotsTxt (8.x-1.4)\n"
+"POT-Creation-Date: 2020-03-27 06:47+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Ukrainian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+msgid "Settings"
+msgstr "Налаштування"
+msgid "Other"
+msgstr "Інше"
+msgid "Manage your robots.txt file."
+msgstr "Керування вашим robots.txt файлом."
+msgid ""
+"Generates the robots.txt file dynamically and gives you the chance to "
+"edit it, on a per-site basis, from the web UI."
+msgstr ""
+"Створює robots.txt файл динамічно й дає Вам "
+"можливість редагувати його, на сайті в "
+"користувацькому режимен."
