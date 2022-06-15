@@ -1,0 +1,35 @@
+uuid: 16a0316b-fcbf-474e-9be7-b0957da795d0
+langcode: uk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: content
+label: content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  80c864d9-5911-4ca8-86b4-6f389f858566:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 80c864d9-5911-4ca8-86b4-6f389f858566
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+      stattya_v_bloh: stattya_v_bloh
+  edef9c3c-dd3a-4e83-86db-9261b5843238:
+    id: language
+    negate: false
+    uuid: edef9c3c-dd3a-4e83-86db-9261b5843238
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      uk: uk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

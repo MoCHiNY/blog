@@ -6,10 +6,9 @@ dependencies:
     - field.field.paragraph.zobrazhennya_i_tekst.field_body
     - field.field.paragraph.zobrazhennya_i_tekst.field_image
     - field.field.paragraph.zobrazhennya_i_tekst.field_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.zobrazhennya_i_tekst
   module:
-    - image
+    - media_library
     - text
 id: paragraph.zobrazhennya_i_tekst.default
 targetEntityType: paragraph
@@ -25,12 +24,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_image:
-    type: image_image
-    weight: 1
+    type: media_library_widget
+    weight: 3
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_title:
     type: string_textfield

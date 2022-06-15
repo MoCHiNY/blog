@@ -3,28 +3,46 @@ langcode: uk
 status: true
 dependencies:
   config:
+    - field.field.node.stattya_v_bloh.field_attachments
     - field.field.node.stattya_v_bloh.field_body
+    - field.field.node.stattya_v_bloh.field_commects
     - field.field.node.stattya_v_bloh.field_paragraph
     - field.field.node.stattya_v_bloh.field_promo_images
-    - field.field.node.stattya_v_bloh.field_prykriplenni_attachments
     - field.field.node.stattya_v_bloh.field_tags
     - node.type.stattya_v_bloh
   module:
+    - comment
     - entity_reference_revisions
-    - file
-    - image
     - user
 id: node.stattya_v_bloh.default
 targetEntityType: node
 bundle: stattya_v_bloh
 mode: default
 content:
+  field_attachments:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_body:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_commects:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
@@ -36,21 +54,13 @@ content:
     weight: 102
     region: content
   field_promo_images:
-    type: image
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 105
-    region: content
-  field_prykriplenni_attachments:
-    type: file_default
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    weight: 104
+    weight: 107
     region: content
   field_tags:
     type: entity_reference_label

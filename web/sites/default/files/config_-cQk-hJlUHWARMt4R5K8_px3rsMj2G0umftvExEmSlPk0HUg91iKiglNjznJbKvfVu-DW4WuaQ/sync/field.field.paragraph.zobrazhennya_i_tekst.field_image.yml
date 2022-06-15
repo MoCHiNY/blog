@@ -1,19 +1,11 @@
-uuid: 99769250-f7e9-41fc-83b7-1755e170bf6f
+uuid: 242ed2b9-7db1-4c91-beeb-6e6ee33d0602
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
+    - media.type.image
     - paragraphs.paragraphs_type.zobrazhennya_i_tekst
-  module:
-    - content_translation
-    - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: paragraph.zobrazhennya_i_tekst.field_image
 field_name: field_image
 entity_type: paragraph
@@ -25,21 +17,13 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: 'fields/paragraph.zobrazhennya_i_tekst.field_image/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: false
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

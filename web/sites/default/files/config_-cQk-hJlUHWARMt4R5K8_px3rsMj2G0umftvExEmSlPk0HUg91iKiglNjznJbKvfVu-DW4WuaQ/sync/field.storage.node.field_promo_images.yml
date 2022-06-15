@@ -1,27 +1,17 @@
-uuid: f129a015-3093-4e39-a1cd-ebded463e691
+uuid: b118962c-7a54-4562-a68c-2c3eebbfc933
 langcode: uk
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_promo_images
 field_name: field_promo_images
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

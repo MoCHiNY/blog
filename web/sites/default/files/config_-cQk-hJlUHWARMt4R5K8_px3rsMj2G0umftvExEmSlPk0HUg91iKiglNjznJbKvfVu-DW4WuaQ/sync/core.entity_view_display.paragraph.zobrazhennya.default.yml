@@ -7,14 +7,14 @@ dependencies:
     - field.field.paragraph.zobrazhennya.field_title
     - paragraphs.paragraphs_type.zobrazhennya
   module:
-    - image
+    - media
 id: paragraph.zobrazhennya.default
 targetEntityType: paragraph
 bundle: zobrazhennya
 mode: default
 content:
   field_image:
-    type: image
+    type: media_thumbnail
     label: above
     settings:
       image_link: ''

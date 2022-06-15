@@ -1,0 +1,12 @@
+uuid: bc6f9274-8789-41dc-ab29-551c7a01d4c9
+langcode: uk
+status: false
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 6NBUEuGmlkClK8Fb76tSMMpO2eZ4LWCBdbUk4z7CuP0
+id: media.full
+label: 'Full content'
+targetEntityType: media
+cache: true

@@ -1,0 +1,29 @@
+uuid: ac7f7be0-9c5e-42ab-95af-7ee8f6d711dd
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallary_youtubes
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.halereya_video_youtube
+id: paragraph.halereya_video_youtube.field_gallary_youtubes
+field_name: field_gallary_youtubes
+entity_type: paragraph
+bundle: halereya_video_youtube
+label: 'Галерея відео YouTube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

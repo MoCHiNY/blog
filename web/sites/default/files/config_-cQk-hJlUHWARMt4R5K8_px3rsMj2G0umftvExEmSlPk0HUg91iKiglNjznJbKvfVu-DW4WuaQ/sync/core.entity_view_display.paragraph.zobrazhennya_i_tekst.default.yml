@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.zobrazhennya_i_tekst.field_title
     - paragraphs.paragraphs_type.zobrazhennya_i_tekst
   module:
-    - image
+    - media
     - text
 id: paragraph.zobrazhennya_i_tekst.default
 targetEntityType: paragraph
@@ -23,13 +23,13 @@ content:
     weight: 2
     region: content
   field_image:
-    type: image
+    type: media_thumbnail
     label: above
     settings:
       image_link: ''
       image_style: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_title:
     type: string

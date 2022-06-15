@@ -3,16 +3,23 @@ langcode: uk
 status: true
 dependencies:
   config:
+    - field.field.paragraph.halereya_video_youtube.field_gallary_youtubes
     - field.field.paragraph.halereya_video_youtube.field_title
-    - field.field.paragraph.halereya_video_youtube.field_youtubes
     - paragraphs.paragraphs_type.halereya_video_youtube
-  module:
-    - youtube
 id: paragraph.halereya_video_youtube.default
 targetEntityType: paragraph
 bundle: halereya_video_youtube
 mode: default
 content:
+  field_gallary_youtubes:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_title:
     type: string
     label: above
@@ -20,21 +27,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_youtubes:
-    type: youtube_video
-    label: above
-    settings:
-      youtube_size: 450x315
-      youtube_width: ''
-      youtube_height: ''
-      youtube_autoplay: false
-      youtube_mute: false
-      youtube_loop: false
-      youtube_controls: false
-      youtube_autohide: false
-      youtube_iv_load_policy: false
-    third_party_settings: {  }
-    weight: 1
     region: content
 hidden: {  }

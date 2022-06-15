@@ -3,17 +3,17 @@ langcode: uk
 status: true
 dependencies:
   config:
+    - field.field.node.stattya_v_bloh.field_attachments
     - field.field.node.stattya_v_bloh.field_body
+    - field.field.node.stattya_v_bloh.field_commects
     - field.field.node.stattya_v_bloh.field_paragraph
     - field.field.node.stattya_v_bloh.field_promo_images
-    - field.field.node.stattya_v_bloh.field_prykriplenni_attachments
     - field.field.node.stattya_v_bloh.field_tags
-    - image.style.thumbnail
     - node.type.stattya_v_bloh
   module:
+    - comment
     - field_group
-    - file
-    - image
+    - media_library
     - paragraphs
     - path
     - scheduler
@@ -53,7 +53,6 @@ third_party_settings:
         required_fields: true
     group_content:
       children:
-        - field_promo_images
         - field_paragraph
       label: Контент
       region: content
@@ -69,7 +68,8 @@ third_party_settings:
         required_fields: true
     group_media:
       children:
-        - field_prykriplenni_attachments
+        - field_promo_images
+        - field_attachments
       label: Медіа
       region: content
       parent_name: group_grups
@@ -93,6 +93,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_attachments:
+    type: media_library_widget
+    weight: 30
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_body:
     type: string_textarea
     weight: 12
@@ -100,6 +107,12 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_commects:
+    type: comment_default
+    weight: 31
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_paragraph:
     type: entity_reference_paragraphs
@@ -114,19 +127,11 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
   field_promo_images:
-    type: image_image
-    weight: 26
+    type: media_library_widget
+    weight: 29
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_prykriplenni_attachments:
-    type: file_generic
-    weight: 12
-    region: content
-    settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete

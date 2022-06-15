@@ -1,38 +1,29 @@
-uuid: 2920b303-6570-48ad-9541-b4f3c7c329aa
+uuid: b7685c5a-ccfd-48cf-bda3-7562ec6161a2
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_images
+    - media.type.image
     - paragraphs.paragraphs_type.images
-  module:
-    - image
 id: paragraph.images.field_images
 field_name: field_images
 entity_type: paragraph
 bundle: images
-label: Зобрадення
+label: 'Базліч зображень'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: 'fields/paragraph.images.field_images/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: false
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
